@@ -1,0 +1,60 @@
+.note {
+    padding: 25px;
+    height: 280px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.note_text {
+    flex: 1;
+    resize: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    line-height: 2rem;
+}
+
+.note_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note_footer img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.note:hover .note_footer img {
+    opacity: 1;
+}
+
+.note_footer p {
+    font-size: 1.2rem;
+}
+
+.custom-scroll1::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scroll1::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+.custom-scroll1::-webkit-scrollbar-thumb {
+border-radius: 20px;
+background-color: #ccc;
+transition: 300ms;
+}
+
+.custom-scroll1::-webkit-scrollbar-thumb:hover {
+background-color: grey;
+cursor: pointer; 
+}
